@@ -15,7 +15,7 @@ import cesium from 'vite-plugin-cesium'
 export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd())
   return {
-    //base: env.VITE_APP_BASE,
+    base: env.VITE_APP_BASE,
     server: {
       open: false,
       port: parseInt(env.VITE_APP_PORT),
