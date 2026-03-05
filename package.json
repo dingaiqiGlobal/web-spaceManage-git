@@ -1,0 +1,35 @@
+{
+  "name": "web-spaceManage",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --mode development",
+    "build": "vite build --mode production",
+    "preview": "vite preview",
+    "format": "prettier --write --experimental-cli src/"
+  },
+  "dependencies": {
+    "@turf/turf": "^7.3.4",
+    "axios": "^1.13.6",
+    "cesium": "^1.136.0",
+    "dayjs": "^1.11.19",
+    "element-plus": "^2.12.0",
+    "mitt": "^3.0.1",
+    "pinia": "^3.0.4",
+    "vite-plugin-cesium": "^1.2.23",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.2",
+    "less": "^4.4.2",
+    "prettier": "3.6.2",
+    "vite": "^7.2.7",
+    "vite-plugin-static-copy": "^3.1.4",
+    "vite-plugin-vue-devtools": "^8.0.5"
+  }
+}
