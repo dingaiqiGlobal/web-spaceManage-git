@@ -21,23 +21,23 @@ let ViewInit = {
       timeline: true, // 是否显示时间线控件
       animation: true, // 是否显示动画控件
       shouldAnimate: true,
-      contextOptions: {
-        //WebGL
-        requestWebgl1: false,
-        allowTextureFilterAnisotropic: true, //允许纹理过滤器各向异性
-        webgl: {
-          alpha: false,
-          depth: true, //深度
-          stencil: false, //钢印
-          antialias: true, //抗锯齿
-          powerPreference: 'high-performance', //权值偏好
-          premultipliedAlpha: true, //预乘Alpha
-          preserveDrawingBuffer: false, //保留绘制缓冲
-          failIfMajorPerformanceCaveat: false, //警告
-        },
-      },
-      requestRenderMode: true, //显示渲染模式-慎用
-      maximumRenderTimeChange: Infinity, //最大渲染时间更改与requestRenderMode成对出现
+      // contextOptions: {
+      //   //WebGL
+      //   requestWebgl1: false,
+      //   allowTextureFilterAnisotropic: true, //允许纹理过滤器各向异性
+      //   webgl: {
+      //     alpha: false,
+      //     depth: true, //深度
+      //     stencil: false, //钢印
+      //     antialias: true, //抗锯齿
+      //     powerPreference: 'high-performance', //权值偏好
+      //     premultipliedAlpha: true, //预乘Alpha
+      //     preserveDrawingBuffer: false, //保留绘制缓冲
+      //     failIfMajorPerformanceCaveat: false, //警告
+      //   },
+      // },
+      // requestRenderMode: true, //显示渲染模式-慎用---影响性能
+      // maximumRenderTimeChange: Infinity, //最大渲染时间更改与requestRenderMode成对出现
     })
     /**
      * 基础设置
