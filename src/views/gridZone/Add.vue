@@ -90,7 +90,7 @@ const form = reactive({
   zoneId: null,
   zoneName: '',
   zoneStatus: 1,
-  spaceType: 1,
+  spaceType: 3,
   upperLimit: 0,
   lowerLimit: 0,
   zoneType: 1,
@@ -140,7 +140,7 @@ function initEditMode() {
     radius: data.radius || 1,
     editPoint: true,
   })
-
+  console.log(data, '11111111111')
   if (data.boundary) {
     parseAndDrawBoundary(data.boundary)
   }
@@ -190,7 +190,7 @@ function handleDrawData(data) {
 
 function handleGeometryType(drawType) {
   const typeMap = { Point: 1, Polyline: 2, Polygon: 3, Circle: 4 }
-  form.spaceType = typeMap[drawType] || 1
+  form.spaceType = typeMap[drawType] || 3
 }
 
 // 解析 WKT POLYGON 为边界范围
@@ -295,7 +295,7 @@ function resetForm() {
     zoneId: null,
     zoneName: '',
     zoneStatus: 1,
-    spaceType: 1,
+    spaceType: 3,
     upperLimit: 0,
     lowerLimit: 0,
     zoneType: 1,
